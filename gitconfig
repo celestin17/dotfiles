@@ -47,5 +47,5 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = celestin.prudhomme@gmail.com
-	name = celestin prudhomme
+	email = celestin@skello.io
+	name = Celestin Prudhomme
