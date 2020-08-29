@@ -21,6 +21,7 @@ type -a rbenv > /dev/null && eval "$(rbenv init -)"
 # So instead of running `bin/rails` like the doc says, just run `rails`
 # Same for `./node_modules/.bin` and nodejs
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
+export PATH="/Users/celo/Skello/flow-cli/bin:$PATH"
 
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
@@ -32,3 +33,6 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+
+export YVM_DIR=/Users/celo/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh

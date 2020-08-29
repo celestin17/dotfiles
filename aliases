@@ -9,8 +9,23 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 # Foreman server
 alias s="foreman start -f Procfile.dev"
 
+# Skello
+alias sk-server="bin/webpack-dev-Server"
+alias sk-yarn="rm -rf node_modules && yarn install"
+alias sk-linters="rubocop $(git diff --name-only) --fix && yarn run eslint --fix && yarn run stylelint"
+
+# Github
+alias ga="git add"
+alias gcm="git commit -m"
+alias gpl="git pull origin"
+alias gp="git push origin"
+alias gco="git checkout"
+alias gs="gh pr status"
+alias gv="gh pr view"
+alias gl="gh pr list --label 'Awaiting feedback'"
+alias gc="gh pr checkout"
 
 # Skello folders path
-alias sk="/Users/victorleroy/code/Skello/skello"
-alias skm="/Users/victorleroy/code/Skello/skellomobile"
-alias skb="/Users/victorleroy/code/Skello/skello_timekeeper"
+alias sk="/Users/celo/Skello/app"
+alias skm="/Users/celo/Skello/mobile"
+alias skb="/Users/celo/Skello/punch-clock"
